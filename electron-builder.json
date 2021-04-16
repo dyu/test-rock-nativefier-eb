@@ -9,7 +9,6 @@
   "files": ["nativefier.json", "package.json", "inject/**/*", "lib/**/*", "static/**/*"],
   "publish": "github",
   "linux": {
-    "icon": "static/icons/icon.png",
     "category": "Network",
     "target": [
       {
