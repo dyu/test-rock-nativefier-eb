@@ -1,0 +1,31 @@
+{
+  "name": "test-rock-nativefier-eb",
+  "version": "0.1.0",
+  "main": "lib/main.js",
+  "description": "nativefier and electron builder",
+  "author": {
+    "name": "dyu",
+    "email": "david.yu.ftw@gmail.com",
+    "url": "https://dyuproject.com"
+  },
+  "private": true,
+  "productName": "RockNEB",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dyu/test-rock-nativefier-eb.git"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder -mwl",
+    "dist-linux": "electron-builder -l",
+    "publish": "electron-builder -p always -mwl"
+  },
+  "devDependencies": {
+    "electron": "^12.0.4",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "electron-log": "^4.3.4",
+    "electron-updater": "^4.3.8"
+  }
+}
