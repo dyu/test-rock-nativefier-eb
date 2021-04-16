@@ -1,6 +1,6 @@
 #!/bin/sh
 
-[ ! -n "$1" ] && echo '1st arg (version) is required.' && exit 1
+[ -n "$1" ] && [ -n "$2" ] || { echo '1st arg (version) and 2nd arg (user) is required.'; exit 1; }
 
 cat <<EOF > /tmp/notarize.json
 {
@@ -17,7 +17,7 @@ cat <<EOF > /tmp/notarize.json
     }
   ],
   "apple_id": {
-     "username": "@env:AC_USERNAME",
+     "username": "$2",
      "password": "@env:AC_PASSWORD"
   }
 }
