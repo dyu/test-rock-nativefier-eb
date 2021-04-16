@@ -6,7 +6,7 @@
     "output": "dist",
     "buildResources": "static/icons"
   },
-  "files": ["!node_modules", "nativefier.json", "package.json", "inject/**/*", "lib/**/*", "static/**/*"],
+  "files": ["nativefier.json", "package.json", "inject/**/*", "lib/**/*", "static/**/*"],
   "publish": "github",
   "linux": {
     "icon": "static/icons/icon.png",
